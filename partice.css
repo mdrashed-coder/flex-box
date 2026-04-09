@@ -112,3 +112,85 @@ section{
     justify-content: center;
     
 }
+
+/* css flex items */
+.items{
+    background: rgb(192, 192, 192);
+    
+}
+.items strong{
+    text-align: center;
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 30px;
+
+}
+.items strong::after{
+    content: '';
+    width: 50px;
+    height: 20px;
+    background: green;
+    position: absolute;
+    top: 30px;
+    left: 55%;
+
+}
+.items h2{
+    text-align: center;
+
+}
+.items-continer div{
+    background: green;
+    width: 100px;
+    margin: 5px;
+    text-align: center;
+    padding: 20px ;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.items-continer{
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+.responsive h2{
+    padding-bottom: 30px;
+}
+
+.flex-continer{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.claum{
+    flex: 25%;
+    padding: 0 5px;
+
+}
+.claum img{
+    margin-top: 5px;
+    vertical-align: middle;
+
+
+}
+@media screen and (max-width: 800px) {
+    .claum{
+        flex: 50%;
+        max-width: 50%;
+
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .claum{
+        flex: 100%;
+        max-width: 100%;
+
+    }
+    
+}
